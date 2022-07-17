@@ -1,6 +1,6 @@
-@startuml diagram
+@startuml requirement-model-diagram
 
-title RDRA2.0図
+title 要求モデル図
 left to right direction
 
 actor 親権者
@@ -19,6 +19,7 @@ note "家族に自分の予定を知らせたい" as yk1_12
 note "家族以外には見られたくない" as yk1_13
 note "家族の予定はカレンダー上でシンプルに表示して欲しい" as yk1_14
 note "家族にタスクをお願いしたい" as yk1_15
+note "家族と画像や動画も共有したい" as yk1_16
 
 actor 被養育者
 
@@ -32,6 +33,10 @@ note "匿名の利用統計情報が欲しい" as kanri_6
 note "毎月または毎年の課金の仕組みが欲しい" as kanri_7
 note "無料プランもつくりたい" as kanri_8
 note "無料プランには広告を表示したい" as kanri_9
+
+actor 広告代理店
+note "広告を配置したい" as adv_1
+note "広告を多く閲覧して欲しい" as adv_2
 
 親権者 -- yk1_1
 親権者 -- yk1_2
@@ -48,6 +53,7 @@ note "無料プランには広告を表示したい" as kanri_9
 親権者 -- yk1_13
 親権者 -- yk1_14
 親権者 -- yk1_15
+親権者 -- yk1_16
 
 yk1_2 -- 被養育者
 yk1_3 -- 被養育者
@@ -62,6 +68,7 @@ yk1_12 -- 被養育者
 yk1_13 -- 被養育者
 yk1_14 -- 被養育者
 yk1_15 -- 被養育者
+yk1_16 -- 被養育者
 
 システム管理者 -- kanri_1
 システム管理者 -- kanri_2
@@ -72,5 +79,8 @@ yk1_15 -- 被養育者
 システム管理者 -- kanri_7
 システム管理者 -- kanri_8
 システム管理者 -- kanri_9
+
+広告代理店 -- adv_1
+広告代理店 -- adv_2
 
 @enduml
