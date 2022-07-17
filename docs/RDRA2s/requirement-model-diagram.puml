@@ -21,6 +21,8 @@ note "家族の予定はカレンダー上でシンプルに表示して欲し�
 note "家族にタスクをお願いしたい" as yk1_15
 note "家族と画像や動画も共有したい" as yk1_16
 note "長期的な目標を立てたい" as yk1_17
+note "1つの中規模のタスクをばらして管理したい" as yk1_18
+note "タスクに振り返りとかメモしておきたい" as yk1_19
 note "個人の予定とタスクを管理できる" as yk1_yoken_1 #Turquoise
 note "家族と一緒の予定を管理できる" as yk1_yoken_2 #Turquoise
 note "個人別にログイン認証する" as yk1_yoken_3 #Turquoise
@@ -32,6 +34,8 @@ note "家族全員とチャットできる" as yk1_yoken_8 #Turquoise
 note "家族というグループ毎に情報が閉じるようにする" as yk1_yoken_9 #Turquoise
 note "チャット・タスク・予定作成時に必要に応じて相手に通知する" as yk1_yoken_10 #Turquoise
 note "チャット履歴が保存できる" as yk1_yoken_11 #Turquoise
+note "タスクに子タスクを複数登録できる" as yk1_yoken_12 #Turquoise
+note "タスクや予定に自由記述欄がある" as yk1_yoken_13 #Turquoise
 
 actor 被養育者
 
@@ -69,6 +73,8 @@ note "可用性の確保" as adv_yoken_2 #Turquoise
 親権者 -- yk1_15
 親権者 -- yk1_16
 親権者 -- yk1_17
+親権者 -- yk1_18
+親権者 -- yk1_19
 
 yk1_2 -- 被養育者
 yk1_3 -- 被養育者
@@ -84,6 +90,8 @@ yk1_13 -- 被養育者
 yk1_14 -- 被養育者
 yk1_15 -- 被養育者
 yk1_16 -- 被養育者
+yk1_18 -- 被養育者
+yk1_19 -- 被養育者
 
 yk1_3 -- yk1_yoken_1
 yk1_1 -- yk1_yoken_4
@@ -103,6 +111,8 @@ yk1_12 -- yk1_yoken_10
 yk1_7 -- yk1_yoken_11
 yk1_8 -- yk1_yoken_10
 yk1_2 -- yk1_yoken_9
+yk1_18 -- yk1_yoken_12
+yk1_19 -- yk1_yoken_13
 
 システム管理者 -- kanri_1
 システム管理者 -- kanri_2
