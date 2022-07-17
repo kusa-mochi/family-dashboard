@@ -102,6 +102,7 @@ yk1_13 -- yk1_yoken_9
 yk1_12 -- yk1_yoken_10
 yk1_7 -- yk1_yoken_11
 yk1_8 -- yk1_yoken_10
+yk1_2 -- yk1_yoken_9
 
 システム管理者 -- kanri_1
 システム管理者 -- kanri_2
@@ -112,6 +113,7 @@ yk1_8 -- yk1_yoken_10
 システム管理者 -- kanri_7
 システム管理者 -- kanri_8
 システム管理者 -- kanri_9
+kanri_9 -- adv_yoken_1
 
 広告代理店 -- adv_1
 広告代理店 -- adv_2
