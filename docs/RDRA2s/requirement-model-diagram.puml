@@ -17,9 +17,21 @@ note "被養育者を追加したい" as yk1_10 #Pink
 note "予定とかタスクとか関係なく連絡したい" as yk1_11 #Pink
 note "家族に自分の予定を知らせたい" as yk1_12
 note "家族以外には見られたくない" as yk1_13 #Pink
-note "家族の予定はカレンダー上でシンプルに表示して欲しい" as yk1_14 #Pink
+note "家族の予定はカレンダー上でシンプルに表示して欲しい" as yk1_14
 note "家族にタスクをお願いしたい" as yk1_15
 note "家族と画像や動画も共有したい" as yk1_16
+note "長期的な目標を立てたい" as yk1_17
+note "個人の予定とタスクを管理できる" as yk1_yoken_1 #Turquoise
+note "家族と一緒の予定を管理できる" as yk1_yoken_2 #Turquoise
+note "個人別にログイン認証する" as yk1_yoken_3 #Turquoise
+note "ユーザーロールが設定できる" as yk1_yoken_4 #Turquoise
+note "マイルストーンが設定できる" as yk1_yoken_5 #Turquoise
+note "画像と動画が保存できる" as yk1_yoken_6 #Turquoise
+note "指定した家族／家族らとチャットできる" as yk1_yoken_7 #Turquoise
+note "家族全員とチャットできる" as yk1_yoken_8 #Turquoise
+note "家族というグループ毎に情報が閉じるようにする" as yk1_yoken_9 #Turquoise
+note "チャット・タスク・予定作成時に必要に応じて相手に通知する" as yk1_yoken_10 #Turquoise
+note "チャット履歴が保存できる" as yk1_yoken_11 #Turquoise
 
 actor 被養育者
 
@@ -27,8 +39,8 @@ actor システム管理者
 note "色んな家族に利用してもらいたい" as kanri_1
 note "障害発生時、ある時点までシステムを戻したい" as kanri_2
 note "家族単位でシステムを戻したい" as kanri_3
-note "各親権者に最新情報などをお知らせしたい" as kanri_4 #Pink
-note "利用者からの問合せ手段が欲しい" as kanri_5 #Pink
+note "各親権者に最新情報などをお知らせしたい" as kanri_4
+note "利用者からの問合せ手段が欲しい" as kanri_5
 note "匿名の利用統計情報が欲しい" as kanri_6
 note "毎月または毎年の課金の仕組みが欲しい" as kanri_7
 note "無料プランもつくりたい" as kanri_8 #Pink
@@ -37,6 +49,8 @@ note "無料プランには広告を表示したい" as kanri_9 #Pink
 actor 広告代理店
 note "広告を配置したい" as adv_1 #Pink
 note "広告を多く閲覧して欲しい" as adv_2 #Pink
+note "サイトマップを自動生成する" as adv_yoken_1 #Turquoise
+note "可用性の確保" as adv_yoken_2 #Turquoise
 
 親権者 -- yk1_1
 親権者 -- yk1_2
@@ -54,6 +68,7 @@ note "広告を多く閲覧して欲しい" as adv_2 #Pink
 親権者 -- yk1_14
 親権者 -- yk1_15
 親権者 -- yk1_16
+親権者 -- yk1_17
 
 yk1_2 -- 被養育者
 yk1_3 -- 被養育者
@@ -70,6 +85,24 @@ yk1_14 -- 被養育者
 yk1_15 -- 被養育者
 yk1_16 -- 被養育者
 
+yk1_3 -- yk1_yoken_1
+yk1_1 -- yk1_yoken_4
+yk1_10 -- yk1_yoken_4
+yk1_9 -- yk1_yoken_3
+yk1_1 -- yk1_yoken_2
+yk1_17 -- yk1_yoken_5
+yk1_16 -- yk1_yoken_6
+yk1_6 -- yk1_yoken_7
+yk1_5 -- yk1_yoken_7
+yk1_11 -- yk1_yoken_7
+yk1_6 -- yk1_yoken_8
+yk1_5 -- yk1_yoken_8
+yk1_11 -- yk1_yoken_8
+yk1_13 -- yk1_yoken_9
+yk1_12 -- yk1_yoken_10
+yk1_7 -- yk1_yoken_11
+yk1_8 -- yk1_yoken_10
+
 システム管理者 -- kanri_1
 システム管理者 -- kanri_2
 システム管理者 -- kanri_3
@@ -82,5 +115,7 @@ yk1_16 -- 被養育者
 
 広告代理店 -- adv_1
 広告代理店 -- adv_2
+adv_1 -- adv_yoken_1
+adv_2 -- adv_yoken_2
 
 @enduml
