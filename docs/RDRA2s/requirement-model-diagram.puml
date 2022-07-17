@@ -4,8 +4,8 @@ title 要求モデル図
 left to right direction
 
 actor 親権者
-note "家族の予定を立てたい" as yk1_1
-note "家族の予定を知りたい" as yk1_2
+note "家族の予定を立てたい" as yk1_1 #Pink
+note "家族の予定を知りたい" as yk1_2 #Pink
 note "個人的なタスクを管理したい" as yk1_3
 note "タスクによっては予定を紐づけたい" as yk1_4
 note "予定に関連して家族と連絡がとりたい" as yk1_5
@@ -13,11 +13,11 @@ note "タスクに関連して家族と連絡がとりたい" as yk1_6
 note "後から連絡履歴を検索したい" as yk1_7
 note "連絡の返事はなるべく早く欲しい" as yk1_8
 note "他の家族には予定が埋まっていることだけを伝えたいときもある" as yk1_9
-note "被養育者を追加したい" as yk1_10
-note "予定とかタスクとか関係なく連絡したい" as yk1_11
+note "被養育者を追加したい" as yk1_10 #Pink
+note "予定とかタスクとか関係なく連絡したい" as yk1_11 #Pink
 note "家族に自分の予定を知らせたい" as yk1_12
-note "家族以外には見られたくない" as yk1_13
-note "家族の予定はカレンダー上でシンプルに表示して欲しい" as yk1_14
+note "家族以外には見られたくない" as yk1_13 #Pink
+note "家族の予定はカレンダー上でシンプルに表示して欲しい" as yk1_14 #Pink
 note "家族にタスクをお願いしたい" as yk1_15
 note "家族と画像や動画も共有したい" as yk1_16
 
@@ -27,16 +27,16 @@ actor システム管理者
 note "色んな家族に利用してもらいたい" as kanri_1
 note "障害発生時、ある時点までシステムを戻したい" as kanri_2
 note "家族単位でシステムを戻したい" as kanri_3
-note "各親権者に最新情報などをお知らせしたい" as kanri_4
-note "利用者からの問合せ手段が欲しい" as kanri_5
+note "各親権者に最新情報などをお知らせしたい" as kanri_4 #Pink
+note "利用者からの問合せ手段が欲しい" as kanri_5 #Pink
 note "匿名の利用統計情報が欲しい" as kanri_6
 note "毎月または毎年の課金の仕組みが欲しい" as kanri_7
-note "無料プランもつくりたい" as kanri_8
-note "無料プランには広告を表示したい" as kanri_9
+note "無料プランもつくりたい" as kanri_8 #Pink
+note "無料プランには広告を表示したい" as kanri_9 #Pink
 
 actor 広告代理店
-note "広告を配置したい" as adv_1
-note "広告を多く閲覧して欲しい" as adv_2
+note "広告を配置したい" as adv_1 #Pink
+note "広告を多く閲覧して欲しい" as adv_2 #Pink
 
 親権者 -- yk1_1
 親権者 -- yk1_2
