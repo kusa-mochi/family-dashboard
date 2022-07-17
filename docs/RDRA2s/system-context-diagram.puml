@@ -1,0 +1,22 @@
+@startuml system-context-diagram
+
+title システムコンテキスト図
+left to right direction
+
+actor 親権者
+actor 被養育者
+actor システム管理者
+actor 広告代理店
+usecase 家族間情報共有システム as system
+
+note top of system
+システム化の目的
+・家族間で予定とタスクの共有をスマホで手軽でできるようにする。
+end note
+
+親権者 -- system
+被養育者 -- system
+system -- システム管理者
+system -- 広告代理店
+
+@enduml
