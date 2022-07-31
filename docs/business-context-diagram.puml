@@ -1,0 +1,43 @@
+@startuml business-context-diagram
+
+title ビジネスコンテキスト図
+left to right direction
+
+node 家庭 {
+    actor 親権者
+    actor 被養育者
+    usecase 家族認証
+    usecase 家族設定管理
+    usecase スケジュール管理
+    usecase タスク管理
+    artifact 認証情報
+    artifact 家族設定
+    artifact スケジュール
+    artifact タスク
+
+    親権者 -- 家族認証
+    親権者 -- 家族設定管理
+    親権者 -- スケジュール管理
+    親権者 -- タスク管理
+    被養育者 -- 家族認証
+    被養育者 -- スケジュール管理
+    被養育者 -- タスク管理
+
+    家族認証 -- 認証情報
+    家族設定管理 -- 家族設定
+    家族設定管理 -- 認証情報
+    スケジュール管理 -- スケジュール
+    タスク管理 -- タスク
+}
+
+actor システム管理者
+usecase 家族管理
+artifact 家族リスト
+
+システム管理者 -- 家族管理
+家族管理 -- 家族リスト
+家族管理 -- 家族設定
+
+node 広告代理店
+
+@enduml
