@@ -1,0 +1,32 @@
+@startuml ビジネスユースケース図
+
+left to right direction
+
+actor 親権者
+actor 被養育者
+actor システム管理者
+
+usecase スケジュール共有
+usecase タスク共有
+usecase 家族設定管理
+usecase 家族管理
+
+artifact スケジュール
+artifact タスクリスト
+artifact 家族設定
+artifact 家族リスト
+
+親権者 -- 家族設定管理
+親権者 -- スケジュール共有
+親権者 -- タスク共有
+被養育者 -- スケジュール共有
+被養育者 -- タスク共有
+システム管理者 -- 家族管理
+
+家族設定管理 -- 家族設定
+スケジュール共有 -- スケジュール
+タスク共有 -- タスクリスト
+家族管理 -- 家族設定
+家族管理 -- 家族リスト
+
+@enduml
